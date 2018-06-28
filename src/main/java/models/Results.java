@@ -20,6 +20,7 @@ public class Results {
     }
 
     public void setRegularAmount(BigDecimal regularAmount) {
+
         this.regularAmount = regularAmount;
     }
 

@@ -3,10 +3,10 @@ import exception.PriceException;
 import models.Results;
 import utils.BigDecimalCalculate;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-
 
     public static void main(String[] args) {
         //Store the price the given from user
@@ -27,9 +27,16 @@ public class Main {
             Results returnAmount = BigDecimalCalculate.calculate(price, payments);
             System.out.println(returnAmount);
         } catch (PriceException e) {
-            e.printStackTrace();
+            //In real project we should use Logger
+            System.out.println(e);
         } catch (PaymentsException e) {
-            e.printStackTrace();
+            System.out.println(e);
+        } catch (InputMismatchException e) {
+            System.out.println(e);
+        } catch (NumberFormatException e){
+            System.out.println(e);
         }
+
+
     }
 }
