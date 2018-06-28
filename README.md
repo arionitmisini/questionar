@@ -22,8 +22,8 @@ Please follow carefully step by step instructions below in order to get the app 
 
 2. Get a clone of this project in local machine:
  ```
-git clone https://arionitmisini@bitbucket.org/arionitmisini/questionareapp.git
- cd questionareapp
+git clone https://github.com/arionitmisini/questionar.git
+ cd questionar
  ```
 * Running application with IDE:
    - Open this project folder with any Java IDE (IntelliJ IDEA recommended)
