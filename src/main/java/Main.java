@@ -25,7 +25,7 @@ public class Main {
         try {
             //Store the object Result that return the Calculate method
             Results returnAmount = BigDecimalCalculate.calculate(price, payments);
-            System.out.println(returnAmount.toString());
+            System.out.println(returnAmount);
         } catch (PriceException e) {
             e.printStackTrace();
         } catch (PaymentsException e) {
