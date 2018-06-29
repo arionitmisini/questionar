@@ -35,9 +35,19 @@ cd questionar/
   java -jar questionare-1.0-SNAPSHOT.jar <Total amount> <No of payments>
   ```
 
-* Or run application with IDE:
-   - Open this project folder with any Java IDE (IntelliJ IDEA recommended)
-   - Run the application using IDE Run Option
+**Note: After running the application please read the API documentation below the "Running Test Section"**
+## Running Tests
+Follow the instructions below in order to run automated tests.
+
+ * Running tests with IDE:
+    * Run with any IDE the "BigDecimalCalculateTest.java" file located in project location "src/test/java/utils/BigDecimalCalculateTest.java".
+ * Running tests with command line:
+    * Open the Terminal
+    * Change directory to the project directory in terminal
+    * Run the command below:
+ ```
+  mvn test
+ ```
 
  ## Author
   * **Arionit Misini**
