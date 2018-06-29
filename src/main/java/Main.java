@@ -4,23 +4,27 @@ import models.Results;
 import utils.BigDecimalCalculate;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        //Read the input from user with scanner
-        Scanner scanner = new Scanner(System.in);
         //Store the price the given from user
         String price;
         //Store the number of payments the given from user
         int payments;
 
         try {
-            System.out.print("Total amount : ");
-            price = scanner.nextLine();
-            System.out.print("Number of payments : ");
-            payments = scanner.nextInt();
+
+            if (args.length == 0 || args[0].trim().equals("")) {
+                throw new PriceException("Please input a valid Total price");
+            } else if (args.length == 1 || args[1].trim().equals("")) {
+                throw new PaymentsException("Please input a valid Payments number");
+            }
+            //Get price from input args
+            price = args[0];
+            //Get payments from input args
+            payments = Integer.parseInt(args[1]);
+
 
             //Store the object Result that return the Calculate method
             Results returnAmount = BigDecimalCalculate.calculate(price, payments);
