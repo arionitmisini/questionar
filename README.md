@@ -23,10 +23,19 @@ Please follow carefully step by step instructions below in order to get the app 
 2. Get a clone of this project in local machine:
  ```
 git clone https://github.com/arionitmisini/questionar.git
- cd questionar
- mvn clean install
+cd questionar/
  ```
-* Running application with IDE:
+3. Build project and JAR file.
+  ```
+  mvn clean install
+  ```
+4. Run project with terminal
+```
+  cd target/
+  java -jar questionare-1.0-SNAPSHOT.jar <Total amount> <No of payments>
+  ```
+
+* Or run application with IDE:
    - Open this project folder with any Java IDE (IntelliJ IDEA recommended)
    - Run the application using IDE Run Option
 
