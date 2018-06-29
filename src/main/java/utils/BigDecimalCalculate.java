@@ -10,14 +10,6 @@ import java.math.RoundingMode;
 public class BigDecimalCalculate {
 
     public static Results calculate(String totalPrice, int payments) throws PriceException, PaymentsException {
-
-        int i;
-
-        try {
-            i = Integer.parseInt(totalPrice);
-        } catch (NumberFormatException e) {
-            throw new PriceException("Invalid Format for total amount");
-        }
         //Check if price is empty
         if (totalPrice.isEmpty()) {
             //Throw exception if condition it's true
