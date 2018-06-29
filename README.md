@@ -24,6 +24,7 @@ Please follow carefully step by step instructions below in order to get the app 
  ```
 git clone https://github.com/arionitmisini/questionar.git
  cd questionar
+ mvn clean install
  ```
 * Running application with IDE:
    - Open this project folder with any Java IDE (IntelliJ IDEA recommended)
