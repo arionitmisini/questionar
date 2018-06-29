@@ -29,7 +29,5 @@ public class Main {
             //In real project we should use Logger
             System.out.println(e);
         }
-
-
     }
 }

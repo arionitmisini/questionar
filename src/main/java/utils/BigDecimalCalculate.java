@@ -18,7 +18,7 @@ public class BigDecimalCalculate {
 
         //Check if payments number is less or equals than 0
         if (payments <= 0) {
-            //Throw exception if codition it's true
+            //Throw exception if condition it's true
             throw new PaymentsException("The payment it's less or equals than 0");
         }
 
