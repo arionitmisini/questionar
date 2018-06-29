@@ -33,7 +33,7 @@ public class BigDecimalCalculateTest {
 
     @Test(expected = PriceException.class)
     public void calculateShouldThrowPriceExeptionWhenTotalPriceValueIsLessThenZero() throws PriceException, PaymentsException {
-        BigDecimalCalculate.calculate("-10", 3);
+        BigDecimalCalculate.calculate("0", 3);
 
     }
 

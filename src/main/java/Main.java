@@ -14,7 +14,6 @@ public class Main {
         int payments;
 
         try {
-
             if (args.length == 0 || args[0].trim().equals("")) {
                 throw new PriceException("Please input a valid Total price");
             } else if (args.length == 1 || args[1].trim().equals("")) {
@@ -24,7 +23,6 @@ public class Main {
             price = args[0];
             //Get payments from input args
             payments = Integer.parseInt(args[1]);
-
 
             //Store the object Result that return the Calculate method
             Results returnAmount = BigDecimalCalculate.calculate(price, payments);
