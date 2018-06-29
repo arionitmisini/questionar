@@ -35,7 +35,7 @@ public class Results {
     @Override
     public String toString() {
         if (getLastAmount().equals(getRegularAmount())) {
-            return "Regular amount : [" + numberFormat.format(getRegularAmount())+"]";
+            return "Regular amount : [" + numberFormat.format(getRegularAmount()) + "]";
         } else {
             return "Regular amount : [" + numberFormat.format(getRegularAmount()) + "]" +
                     "\nLast amount : [" + numberFormat.format(getLastAmount()) + "]";

@@ -10,9 +10,17 @@ import java.math.RoundingMode;
 public class BigDecimalCalculate {
 
     public static Results calculate(String totalPrice, int payments) throws PriceException, PaymentsException {
+
+        int i;
+
+        try {
+            i = Integer.parseInt(totalPrice);
+        } catch (NumberFormatException e) {
+            throw new PriceException("Invalid Format for total amount");
+        }
         //Check if price is empty
         if (totalPrice.isEmpty()) {
-            //Throw exception if codition it's true
+            //Throw exception if condition it's true
             throw new PriceException("The price is empty");
         }
 
@@ -22,6 +30,7 @@ public class BigDecimalCalculate {
             throw new PaymentsException("The payment it's less or equals than 0");
         }
 
+        //Create a BigDecimal price because BigDecimal is immutable and we can't change the value, we can just create new Obj
         BigDecimal price = new BigDecimal(totalPrice);
 
         //Save the divide with price and payments
