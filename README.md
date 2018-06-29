@@ -21,19 +21,19 @@ Please follow carefully step by step instructions below in order to get the app 
 1. Open Terminal
 
 2. Get a clone of this project in local machine:
- ```
+```
 git clone https://github.com/arionitmisini/questionar.git
 cd questionar/
- ```
+```
 3. Build project and JAR file.
-  ```
-  mvn clean install
-  ```
+```
+mvn clean install
+```
 4. Run project with terminal
 ```
-  cd target/
-  java -jar questionare-1.0-SNAPSHOT.jar <Total amount> <No of payments>
-  ```
+cd target/
+java -jar questionare-1.0-SNAPSHOT.jar <Total amount> <No of payments>
+```
 
 **Note: After running the application please read the API documentation below the "Running Test Section"**
 ## Running Tests
@@ -45,9 +45,9 @@ Follow the instructions below in order to run automated tests.
     * Open the Terminal
     * Change directory to the project directory in terminal
     * Run the command below:
- ```
-  mvn test
- ```
+```
+mvn test
+```
 
  ## Author
   * **Arionit Misini**
