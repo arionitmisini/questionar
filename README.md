@@ -35,7 +35,7 @@ cd target/
 java -jar questionare-1.0-SNAPSHOT.jar <Total amount> <No of payments>
 ```
 
-**Note: After running the application please read the API documentation below the "Running Test Section"**
+**Note: After running the application please read the documentation below the "Running Test Section"**
 ## Running Tests
 Follow the instructions below in order to run automated tests.
 
